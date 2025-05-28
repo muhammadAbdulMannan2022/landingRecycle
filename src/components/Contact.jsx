@@ -5,7 +5,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      details: "support@recyclemarket.com",
+      details: "orientedsoutions@hotmail.com",
       description: "Get in touch for any questions or support",
     },
     {

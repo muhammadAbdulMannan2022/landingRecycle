@@ -26,7 +26,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
           <div className="flex items-center space-x-2">
             <Recycle className="h-8 w-8 text-green-600 dark:text-green-400" />
             <span className="text-xl font-bold text-gray-900 dark:text-white">
-              Recycle Market
+              Oriented Solution
             </span>
           </div>
 

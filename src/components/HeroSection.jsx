@@ -12,9 +12,27 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="bg-gradient-to-br from-green-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 py-20 lg:py-32"
+      className="relative bg-gradient-to-br from-green-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 py-20 lg:py-32 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Scrolling Background Text */}
+      <div className="absolute top-0 left-0 w-full z-0 opacity-10 pointer-events-none">
+        <div className="animate-scroll whitespace-nowrap text-6xl font-bold text-green-200">
+          Oriented Solution • Oriented Solution • Oriented Solution • Oriented
+          Solution •
+        </div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Company Name and Tagline */}
+        <div className="text-center mb-12">
+          <h1 className="text-5xl font-bold text-green-700 dark:text-green-400">
+            Oriented Solution
+          </h1>
+          <p className="text-xl text-gray-700 dark:text-gray-300 mt-2">
+            Helping with sustainable needs
+          </p>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
@@ -25,13 +43,13 @@ export default function HeroSection() {
                   Sustainable Future
                 </span>
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+              <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
                 Turn Your{" "}
                 <span className="text-green-600 dark:text-green-400">
                   Recyclables
                 </span>{" "}
                 Into Cash
-              </h1>
+              </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 Join the circular economy revolution. Sell your recyclable
                 materials, earn money, and help create a sustainable future for
@@ -84,7 +102,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Content - Image */}
+          {/* Right Image Content */}
           <div className="relative">
             <div className="relative z-10">
               <img
@@ -95,7 +113,7 @@ export default function HeroSection() {
                 className="rounded-2xl shadow-xl"
               />
             </div>
-            {/* Decorative elements */}
+            {/* Decorative Circles */}
             <div className="absolute -top-4 -right-4 w-72 h-72 bg-green-200 dark:bg-green-800 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-70"></div>
             <div className="absolute -bottom-8 -left-4 w-72 h-72 bg-blue-200 dark:bg-blue-800 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-70"></div>
           </div>

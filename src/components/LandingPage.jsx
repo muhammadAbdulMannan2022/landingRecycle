@@ -7,6 +7,8 @@ import HowItWorks from "./HowItWorks";
 import WhyRecycle from "./WhyRecycle";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import WhoWeAreSection from "./WhoWeAre";
+import PricingSection from "./Pricing";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,8 +42,10 @@ export default function Home() {
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <HeroSection />
-        <HowItWorks />
+        <WhoWeAreSection />
         <WhyRecycle />
+        <HowItWorks />
+        <PricingSection />
         <Contact />
         <Footer />
       </div>
